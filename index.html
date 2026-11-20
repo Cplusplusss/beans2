@@ -178,8 +178,7 @@ function show_infobox() {
 
 </script>
 
-    <title>Beans 2: Legume Legends</title>
-    <meta name="description" content="Beans 2: Legume Legends - play in your browser">
+    <title>Beans 2: Legume Legends</title>    <meta name="description" content="Beans 2: Legume Legends - play in your browser">
     <meta property="og:type" content="video.other">
     <meta property="og:title" content="Beans 2: Legume Legends">
     <meta property="og:description" content="Click to play Beans 2 in your browser">
@@ -307,6 +306,15 @@ function show_infobox() {
 
     <script src="https://pygame-web.github.io/cdn/0.9.3//browserfs.min.js"></script>
 
+    <style>
+        html, body { background: #000 !important; overflow: hidden; height: 100%; }
+        canvas#canvas {
+            width: min(100vw, calc(100vh * 16 / 9)) !important;
+            height: min(100vh, calc(100vw * 9 / 16)) !important;
+            top: 0 !important; bottom: 0 !important; left: 0 !important; right: 0 !important;
+            margin: auto !important;
+        }
+    </style>
 </head>
 
 <body>
