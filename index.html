@@ -315,6 +315,15 @@ function show_infobox() {
             margin: auto !important;
         }
     </style>
+    <script>
+        // pygbag scales mouse positions twice when the canvas is resized, so track the real
+        // position in game pixels (960x540) here; main.py feeds it to the game every frame
+        ["pointermove", "pointerdown", "pointerup"].forEach(type => document.addEventListener(type, e => {
+            const r = document.getElementById("canvas").getBoundingClientRect();
+            if (r.width > 0 && r.height > 0)
+                window.beans_mouse = [(e.clientX - r.left) * 960 / r.width, (e.clientY - r.top) * 540 / r.height];
+        }, true));
+    </script>
 </head>
 
 <body>
