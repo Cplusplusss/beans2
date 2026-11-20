@@ -1,0 +1,13 @@
+{
+  "version": "1.0",
+  "type": "rich",
+  "title": "Beans 2: Legume Legends",
+  "provider_name": "Beans 2",
+  "provider_url": "https://cplusplusss.github.io/beans2/",
+  "width": 960,
+  "height": 540,
+  "thumbnail_url": "https://cplusplusss.github.io/beans2/cover.png",
+  "thumbnail_width": 960,
+  "thumbnail_height": 540,
+  "html": "<iframe src=\"https://cplusplusss.github.io/beans2/\" width=\"960\" height=\"540\" frameborder=\"0\" allow=\"autoplay; fullscreen; gamepad\" allowfullscreen></iframe>"
+}
